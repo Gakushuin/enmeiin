@@ -25,7 +25,7 @@
       <nav class="global-nav" id="globalNav">
         <a href="#about">この場所について</a>
         <a href="#guide">ご案内</a>
-        <a href="#season">季節のご案内</a>
+        <a href="#gallery">風景</a>
         <a href="#access">アクセス</a>
         <a href="#contact" class="nav-contact">お問い合わせ</a>
       </nav>
@@ -34,34 +34,39 @@
 
   <main id="top">
     <section class="hero">
-      <div class="hero-bg"></div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&fit=crop&w=1800&q=80" alt="落ち着いた和の風景" />
+      </div>
+      <div class="hero-overlay"></div>
       <div class="hero-inner">
         <p class="eyebrow">Motoasakusa, Taito-ku</p>
-        <h1>元浅草に、<br />静かにひらかれた場所。</h1>
+        <h1>静けさと、やわらかな光がある<br />元浅草の場所。</h1>
         <p class="hero-copy">
           玉龍山 延命院は、東京都台東区元浅草にある寺院です。<br />
-          地域の中で、日々のこと、家族のこと、これからのことを落ち着いて相談できる場所でありたいと考えています。
+          地域の中で、日々のこと、家族のこと、これからのことを、落ち着いて相談できる場所でありたいと考えています。
         </p>
         <div class="hero-actions">
           <a class="button primary" href="#access">アクセスを見る</a>
           <a class="button secondary" href="#contact">連絡先を見る</a>
         </div>
       </div>
-      <div class="scroll-note">scroll</div>
-    </section>
 
-    <section class="intro">
-      <div class="intro-card">
-        <span>地域</span>
-        <p>元浅草のまちに根ざし、地域の皆さまにとって身近な場所であり続けます。</p>
-      </div>
-      <div class="intro-card">
-        <span>相談</span>
-        <p>法要やご供養、墓地に関することなど、状況に合わせて丁寧にご案内します。</p>
-      </div>
-      <div class="intro-card">
-        <span>安心</span>
-        <p>初めての方にも分かりやすく、落ち着いて問い合わせられる窓口を大切にしています。</p>
+      <div class="hero-panels">
+        <article class="hero-panel glass">
+          <span class="panel-label">Community</span>
+          <h2>地域にひらく</h2>
+          <p>元浅草の中で、静かに立ち寄れる落ち着いた場所を目指しています。</p>
+        </article>
+        <article class="hero-panel glass">
+          <span class="panel-label">Guide</span>
+          <h2>丁寧なご案内</h2>
+          <p>法要・ご供養・墓地のことなど、内容に応じて分かりやすくご案内します。</p>
+        </article>
+        <article class="hero-panel glass">
+          <span class="panel-label">Contact</span>
+          <h2>お問い合わせ</h2>
+          <p>お越しになる前のご相談も歓迎しています。電話・メールでご連絡ください。</p>
+        </article>
       </div>
     </section>
 
@@ -70,21 +75,23 @@
         <p>About</p>
         <h2>この場所について</h2>
       </div>
-      <div class="about-layout">
-        <div class="about-text">
+      <div class="about-grid">
+        <div class="image-card soft-shadow">
+          <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?auto=format&fit=crop&w=1300&q=80" alt="穏やかな和の建築イメージ" loading="lazy" />
+        </div>
+        <div class="about-card soft-shadow">
+          <p class="small-heading">ENMEIIN</p>
+          <h3>まちの中にある、落ち着いた空気</h3>
           <p>
             延命院は、台東区元浅草にある、まちの中の静かな寺院です。周辺には上野・浅草・稲荷町方面からもアクセスしやすく、
-            日常の中でふと立ち寄れる落ち着いた場所として、地域の方々との関わりを大切にしています。
+            忙しい日常の中でも、少し気持ちを整えられるような場所でありたいと考えています。
           </p>
           <p>
             ご家族の節目に関するご相談、法要やご供養、墓地に関するお問い合わせなど、内容に応じて分かりやすくご案内いたします。
-            まずはお電話またはメールにてご連絡ください。
+            初めての方も、どうぞ安心してご連絡ください。
           </p>
-        </div>
-        <div class="about-panel">
-          <h3>大切にしていること</h3>
-          <ul>
-            <li>初めての方にも分かりやすい案内</li>
+          <ul class="feature-list">
+            <li>初めての方にも分かりやすいご案内</li>
             <li>ご家族の事情に合わせた丁寧な対応</li>
             <li>地域に開かれた落ち着きある雰囲気</li>
           </ul>
@@ -92,103 +99,115 @@
       </div>
     </section>
 
-    <section class="section beige" id="guide">
-      <div class="section-title">
+    <section class="section section-soft" id="guide">
+      <div class="section-title centered">
         <p>Guide</p>
         <h2>ご案内</h2>
       </div>
       <div class="guide-grid">
-        <article class="guide-card">
+        <article class="guide-card soft-shadow">
           <div class="guide-number">01</div>
           <h3>お問い合わせ</h3>
           <p>ご不明点がありましたら、まずは電話またはメールでお問い合わせください。</p>
         </article>
-        <article class="guide-card">
+        <article class="guide-card soft-shadow">
           <div class="guide-number">02</div>
           <h3>法要・ご供養</h3>
           <p>年忌法要、追善供養などについて、日程や内容を確認しながらご案内します。</p>
         </article>
-        <article class="guide-card">
+        <article class="guide-card soft-shadow">
           <div class="guide-number">03</div>
           <h3>墓地・納骨</h3>
           <p>墓地や納骨に関するご相談は、状況に応じて個別にお話を伺います。</p>
         </article>
-        <article class="guide-card">
+        <article class="guide-card soft-shadow">
           <div class="guide-number">04</div>
           <h3>アクセス</h3>
-          <p>元浅草周辺からお越しの際は、下記の地図をご確認ください。</p>
+          <p>元浅草周辺からお越しの際は、下記の地図と連絡先をご確認ください。</p>
         </article>
       </div>
     </section>
 
-    <section class="section" id="season">
-      <div class="section-title">
+    <section class="section" id="gallery">
+      <div class="section-title centered">
+        <p>Gallery</p>
+        <h2>風景と雰囲気</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-card large soft-shadow">
+          <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1400&q=80" alt="やわらかな光が差す和の風景" loading="lazy" />
+          <figcaption>静けさのある時間</figcaption>
+        </figure>
+        <figure class="gallery-card soft-shadow">
+          <img src="https://images.unsplash.com/photo-1526481280695-3c4691d7c5e1?auto=format&fit=crop&w=1200&q=80" alt="落ち着いた空気を感じる風景" loading="lazy" />
+          <figcaption>落ち着いた雰囲気</figcaption>
+        </figure>
+        <figure class="gallery-card soft-shadow">
+          <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1200&q=80" alt="季節感のある景色" loading="lazy" />
+          <figcaption>季節のうつろい</figcaption>
+        </figure>
+      </div>
+      <p class="gallery-note">※掲載写真はイメージです。実際の写真があれば後から差し替え可能です。</p>
+    </section>
+
+    <section class="section season-band">
+      <div class="section-title centered light-title">
         <p>Season</p>
         <h2>季節のご案内</h2>
       </div>
-      <div class="timeline">
-        <div class="timeline-item">
+      <div class="season-grid">
+        <article class="season-card glass">
           <span>春</span>
-          <div>
-            <h3>春のお彼岸</h3>
-            <p>春の節目に合わせたご相談を承ります。</p>
-          </div>
-        </div>
-        <div class="timeline-item">
+          <h3>春のお彼岸</h3>
+          <p>春の節目に合わせたご相談を承ります。</p>
+        </article>
+        <article class="season-card glass">
           <span>夏</span>
-          <div>
-            <h3>お盆の時期</h3>
-            <p>お盆に関するご相談は、時期が近づく前にお問い合わせください。</p>
-          </div>
-        </div>
-        <div class="timeline-item">
+          <h3>お盆の時期</h3>
+          <p>お盆に関するご相談は、時期が近づく前にお問い合わせください。</p>
+        </article>
+        <article class="season-card glass">
           <span>秋</span>
-          <div>
-            <h3>秋のお彼岸</h3>
-            <p>秋の節目に合わせたご相談を承ります。</p>
-          </div>
-        </div>
-        <div class="timeline-item">
+          <h3>秋のお彼岸</h3>
+          <p>秋の節目に合わせたご相談を承ります。</p>
+        </article>
+        <article class="season-card glass">
           <span>随時</span>
-          <div>
-            <h3>各種ご相談</h3>
-            <p>法要・ご供養・墓地などについては、随時お問い合わせください。</p>
-          </div>
-        </div>
+          <h3>各種ご相談</h3>
+          <p>法要・ご供養・墓地などについては、随時お問い合わせください。</p>
+        </article>
       </div>
-      <p class="notice">※内容・日程は変更となる場合があります。詳細はお問い合わせください。</p>
+      <p class="notice centered-note">※内容・日程は変更となる場合があります。詳細はお問い合わせください。</p>
     </section>
 
-    <section class="section access-section" id="access">
+    <section class="section" id="access">
       <div class="section-title">
         <p>Access</p>
-        <h2>アクセス</h2>
+        <h2>アクセス・連絡先</h2>
       </div>
-      <div class="access-layout">
-        <div class="access-info">
-          <dl>
+      <div class="access-grid">
+        <div class="access-card soft-shadow">
+          <div class="contact-list">
             <div>
-              <dt>名称</dt>
-              <dd>玉龍山 延命院</dd>
+              <span>名称</span>
+              <strong>玉龍山 延命院</strong>
             </div>
             <div>
-              <dt>所在地</dt>
-              <dd>東京都台東区元浅草</dd>
+              <span>所在地</span>
+              <strong>東京都台東区元浅草</strong>
             </div>
             <div>
-              <dt>電話</dt>
-              <dd><a href="tel:0338417122">03-3841-7122</a></dd>
+              <span>電話</span>
+              <strong><a href="tel:0338417122">03-3841-7122</a></strong>
             </div>
             <div>
-              <dt>メール</dt>
-              <dd><a href="mailto:enmeiin51@gmail.com">enmeiin51@gmail.com</a></dd>
+              <span>メール</span>
+              <strong><a href="mailto:enmeiin51@gmail.com">enmeiin51@gmail.com</a></strong>
             </div>
-          </dl>
-          <p class="small-note">
-            お越しになる前に、事前にご連絡いただくとスムーズです。
-          </p>
+          </div>
+          <p class="small-note">お越しになる前にご連絡いただくと、よりスムーズにご案内できます。</p>
         </div>
-        <div class="map">
+        <div class="map-card soft-shadow">
           <iframe
             title="延命院 周辺地図"
             src="https://maps.google.com/maps?q=%E5%BB%B6%E5%91%BD%E9%99%A2%20%E5%85%83%E6%B5%85%E8%8D%89&t=&z=16&ie=UTF8&iwloc=&output=embed"
@@ -198,17 +217,17 @@
       </div>
     </section>
 
-    <section class="contact-section" id="contact">
-      <div class="contact-inner">
+    <section class="cta-section" id="contact">
+      <div class="cta-card">
         <p class="eyebrow">Contact</p>
         <h2>お問い合わせ</h2>
         <p>
-          法要・ご供養・墓地・その他のご相談は、下記よりお問い合わせください。
+          法要・ご供養・墓地・その他のご相談は、下記よりお問い合わせください。<br />
+          内容を確認のうえ、順次ご案内いたします。
         </p>
-        <div class="contact-box">
-          <p><strong>電話：</strong><a href="tel:0338417122">03-3841-7122</a></p>
-          <p><strong>メール：</strong><a href="mailto:enmeiin51@gmail.com">enmeiin51@gmail.com</a></p>
-          <p class="small-note">内容を確認のうえ、順次ご案内いたします。</p>
+        <div class="cta-actions">
+          <a class="button light" href="tel:0338417122">03-3841-7122</a>
+          <a class="button light outline" href="mailto:enmeiin51@gmail.com">メールで問い合わせる</a>
         </div>
       </div>
     </section>
