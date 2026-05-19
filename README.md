@@ -12,6 +12,7 @@ https://gakushuin.github.io/enmeiin/
 
 - 電話：03-3841-7122
 - メール：enmeiin51@gmail.com
+- 公式LINE：https://line.me/R/ti/p/@438hohjk
 
 ## ファイル構成
 
@@ -22,7 +23,7 @@ https://gakushuin.github.io/enmeiin/
 
 ## デザイン方針
 
-宗教的な印象を前面に出しすぎず、元浅草の地域にある落ち着いた案内サイトとして見えるようにしています。
+実際のお寺の写真と誤解される外部写真素材は使わず、グラデーション・文様・余白・カード型レイアウトを中心に、公式サイトとして落ち着いた印象になるようにしています。
 
 ## GitHub Pages の設定
 
