@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://gakushuin.github.io/enmeiin/sitemap.xml
