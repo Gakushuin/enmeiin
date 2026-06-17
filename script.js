@@ -1,6 +1,11 @@
 (() => {
   document.documentElement.classList.add("js");
 
+  const backgroundStyles = document.createElement("link");
+  backgroundStyles.rel = "stylesheet";
+  backgroundStyles.href = "backgrounds.css";
+  document.head.appendChild(backgroundStyles);
+
   const header = document.querySelector("[data-header]");
   const menuButton = document.getElementById("menuButton");
   const globalNav = document.getElementById("globalNav");
