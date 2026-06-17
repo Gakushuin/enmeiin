@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* Generated image version */
+body {
+  background-image:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.82), rgba(251, 247, 239, 0.92)),
+    url("assets/images/enmeiin-washi.webp");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.hero {
+  background-image:
+    linear-gradient(90deg, rgba(12, 10, 7, 0.92) 0%, rgba(18, 14, 10, 0.78) 34%, rgba(47, 38, 25, 0.42) 66%, rgba(54, 39, 22, 0.2) 100%),
+    url("assets/images/enmeiin-hero.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-pattern { opacity: 0.08; }
+.hero::before { color: rgba(255, 255, 255, 0.055); }
+
+.section-soft {
+  background-image:
+    linear-gradient(135deg, rgba(242, 234, 223, 0.86), rgba(255, 253, 248, 0.86)),
+    url("assets/images/enmeiin-washi.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.message-card,
+.profile-card,
+.service-card,
+.timeline,
+.event-card,
+.faq-list,
+.access-card {
+  backdrop-filter: blur(10px);
+}
+
+.cta-card {
+  background-image:
+    linear-gradient(135deg, rgba(24, 18, 13, 0.93), rgba(72, 52, 28, 0.7)),
+    url("assets/images/enmeiin-cta.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.event-card.wide {
+  background-image:
+    linear-gradient(135deg, rgba(24, 18, 13, 0.94), rgba(72, 52, 28, 0.72)),
+    url("assets/images/enmeiin-cta.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.visual-card {
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06)),
+    url("assets/images/enmeiin-cta.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 640px) {
+  body { background-attachment: scroll; }
+  .hero { background-position: 62% center; }
+}
