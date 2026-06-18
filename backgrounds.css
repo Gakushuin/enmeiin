@@ -21,6 +21,22 @@ body {
 .hero-pattern { opacity: 0.08; }
 .hero::before { color: rgba(255, 255, 255, 0.055); }
 
+/* Remove the artificial CSS temple/building mark from the first view. */
+.hero-inner {
+  grid-template-columns: minmax(0, 1fr) !important;
+  align-items: center;
+}
+
+.hero-copy-area {
+  max-width: 900px;
+}
+
+.hero-visual,
+.visual-card,
+.temple-illustration {
+  display: none !important;
+}
+
 .section-soft {
   background-image:
     linear-gradient(135deg, rgba(242, 234, 223, 0.86), rgba(255, 253, 248, 0.86)),
@@ -50,14 +66,6 @@ body {
 .event-card.wide {
   background-image:
     linear-gradient(135deg, rgba(24, 18, 13, 0.94), rgba(72, 52, 28, 0.72)),
-    url("assets/images/enmeiin-cta.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.visual-card {
-  background-image:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06)),
     url("assets/images/enmeiin-cta.webp");
   background-size: cover;
   background-position: center;
