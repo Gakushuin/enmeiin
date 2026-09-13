@@ -1,7 +1,7 @@
 (() => {
   const sources = {
-    hondo: "./assets/photos/hondo-interior.jpg.PNG",
-    dainichi: "./assets/photos/dainichi-nyorai.jpg.PNG"
+    hondo: "./assets/photos/hondo-interior.png",
+    dainichi: "./assets/photos/dainichi-nyorai.png"
   };
 
   const loadPhoto = (key) => {
