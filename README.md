@@ -1,28 +1,21 @@
-# 玉龍山 延命院 ホームページ（生成画像使用版）
+# 玉龍山 延命院
 
-東京都台東区元浅草にある **玉龍山 延命院** の静的ホームページです。
+正式URL：https://gyokuryuzanenmeiin.com/
 
-## 特徴
+HTML/CSSで動作する寺院案内サイト。mainのルートからGitHub Pagesで公開します。
 
-- 生成した背景画像（WebP）をそのまま使用したバージョン
-- `assets/images/enmeiin-hero.webp` をヒーロー背景に使用
-- `assets/images/enmeiin-washi.webp` を全体・和紙背景に使用
-- `assets/images/enmeiin-cta.webp` をCTAや暗めのカード背景に使用
-- `backgrounds.css` で背景画像の適用を管理
+## 編集箇所
 
-## 公開URL
+- index.html：寺院紹介、法要・参拝案内、季節のお参り、FAQ、交通案内、電話・メール・LINE
+- styles.css：デザイン・スマートフォン対応
+- sitemap.xml / robots.txt：検索向け設定
+- CNAME：独自ドメイン（GitHub設定と一致させる）
+- renewal/index.html：旧テストURLからトップへの誘導
 
-GitHub Pages が有効になると、以下のURLで公開されます。
+## 運用
 
-https://gakushuin.github.io/enmeiin/
+住所・電話は公開資料で照合。メールとLINE、相談内容は既存のこのリポジトリの公開情報を引き継いでいます。境内の実写、由緒、受付時間、料金、行事の開催日については管理者確認後に追記してください。具体的な日時・料金は仮情報を入れていません。生成された寺院の写真は使用していません。
 
-## ファイル構成
+サイトはフォームで情報を受信しません。メールアプリ・LINE・Googleマップを使います。地図の埋め込みはGoogleから読み込みます。
 
-- `index.html`：トップページ本体
-- `style.css`：共通デザイン
-- `backgrounds.css`：生成画像背景の適用
-- `script.js`：スマホメニュー、スクロール演出、現在地ナビ、ページ上部へ戻るボタン
-- `robots.txt`：検索エンジン向けクロール設定
-- `sitemap.xml`：サイトマップ
-- `.github/workflows/pages.yml`：GitHub Pages公開用ワークフロー
-- `assets/images/*.webp`：生成画像
+正式URLのHTTPS疎通を確認後、Search Consoleで所有者確認・サイトマップ送信を行ってください。SEO用ファイルの配置だけでは検索登録完了を意味しません。
