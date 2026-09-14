@@ -1,0 +1,45 @@
+name: Verify published design
+on:
+  push:
+    branches: ["design/2026-09-renewal"]
+    paths: [".github/workflows/verify-public.yml"]
+permissions:
+  contents: read
+jobs:
+  verify-public-files:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify HTTPS and exact deployed files
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from "node:fs/promises";
+          import { createHash } from "node:crypto";
+          import assert from "node:assert/strict";
+          const origin = "https://gyokuryuzanenmeiin.com/";
+          const files = [
+            ["index.html", ""],
+            ["styles.css", "styles.css?v=20260914-design1"],
+            ["motion.js", "motion.js?v=20260914-design1"]
+          ];
+          for (const [path, route] of files) {
+            const expected = await readFile(path);
+            let verified = false;
+            for (let attempt = 1; attempt <= 4; attempt++) {
+              const response = await fetch(new URL(route, origin), {
+                headers: { "Cache-Control": "no-cache" },
+                signal: AbortSignal.timeout(20000)
+              });
+              const body = Buffer.from(await response.arrayBuffer());
+              const matches = response.ok && body.equals(expected);
+              console.log(JSON.stringify({ path, status: response.status, url: response.url, bytes: body.length, matches, attempt, sha256: createHash("sha256").update(body).digest("hex") }));
+              if (matches) { verified = true; break; }
+              if (attempt < 4) await new Promise(resolve => setTimeout(resolve, 5000));
+            }
+            assert.ok(verified, "Published file differs from reviewed source: " + path);
+          }
+          console.log("PUBLIC_VERIFICATION PASS: HTTPS 200 and exact reviewed HTML, CSS, and JavaScript");
+          NODE

@@ -2,6 +2,7 @@ name: Design review
 on:
   push:
     branches: ["design/2026-09-renewal"]
+    paths: ["index.html", "styles.css", "motion.js", "scripts/check-design.mjs"]
 permissions:
   contents: read
 jobs:
