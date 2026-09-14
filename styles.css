@@ -3,7 +3,7 @@
 :root {
   --paper: #f7f6f0;
   --ink: #27332c;
-  --muted: #657064;
+  --muted: #5e685d;
   --red: #963d30;
   --line: #d6d9ce;
   --forest: #22352c;
@@ -428,8 +428,8 @@ footer address { color: var(--muted); font: normal 14px/2 var(--sans); }
     grid-template-columns: auto auto; gap: 20px 10px;
     padding: 12px 0;
   }
-  .temple-title::before { width: min(52vw, 300px); }
-  .temple-title::after { width: min(55vw, 324px); }
+  .temple-title::before { width: min(49vw, 300px); }
+  .temple-title::after { width: min(52vw, 324px); }
   .temple-title h1 { grid-column: 1; font-size: clamp(63px, 16.5vw, 91px); letter-spacing: .16em; }
   .temple-title > p { grid-column: 2; padding-top: 4px; font-size: 12px; letter-spacing: .15em; }
   .seal { grid-column: 1 / -1; grid-row: 2; justify-self: center; margin: 0; font-size: 12px; padding: 5px 9px; }

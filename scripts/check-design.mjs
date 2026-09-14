@@ -32,6 +32,10 @@ const url = "http://127.0.0.1:4173/";
 await mkdir("design-review", { recursive: true });
 const results = [];
 async function screenshot(page, label, locator) {
+  await page.evaluate(async () => {
+    await document.fonts.ready;
+    await Promise.all(Array.from(document.images).map(async img => { img.loading = "eager"; await img.decode(); }));
+  });
   const data = locator ? await locator.screenshot({ type: "jpeg", quality: 63 }) : await page.screenshot({ type: "jpeg", quality: 65 });
   await writeFile("design-review/" + label + ".jpg", data);
   const encoded = data.toString("base64");
@@ -78,6 +82,7 @@ try {
       };
     });
     console.log("LAYOUT " + JSON.stringify(measurements));
+    if (measurements.documentWidth > width + 1 || measurements.overflows.length) await screenshot(page, "overflow-" + width);
     assert.ok(measurements.documentWidth <= width + 1, "Document horizontal overflow at " + width);
     assert.deepEqual(measurements.overflows, [], "Content outside viewport at " + width);
     assert.equal(measurements.photos.length, 6);
