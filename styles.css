@@ -569,3 +569,31 @@ footer address { color: var(--muted); font: normal 14px/2 var(--sans); }
   .visiting-hours > strong { font-size: 36pt; }
   .footer-bottom > span { font-size: 36pt; }
 }
+
+/* Homepage news: October 2, 2026 event. */
+.news { max-width: var(--page); margin: 0 auto; padding: 36px var(--gutter) 40px; border-bottom: 1px solid var(--line); }
+.news-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.news-heading h2 { font-size: 22px; letter-spacing: .12em; }
+.news-heading time { font: 13px/1.8 var(--sans); color: var(--muted); }
+.news-event { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); align-items: center; gap: 40px; padding-top: 28px; }
+.news-copy h3 { margin: 8px 0 14px; font-size: clamp(28px, 3vw, 38px); letter-spacing: .06em; }
+.news-date { margin-bottom: 16px; color: var(--red); font: 20px/1.6 var(--serif); }
+.news-date strong { font: 32px/1.6 var(--latin); }
+.news-copy .news-note { margin: 14px 0; color: var(--muted); font-size: 13px; }
+.news-poster { display: block; min-width: 0; }
+.news-poster img { width: 100%; border: 1px solid var(--line); }
+.news-poster > span { display: block; margin-top: 8px; text-align: right; color: var(--muted); font-size: 12px; }
+.news-photos { margin-top: 24px; border-top: 1px solid var(--line); }
+.news-photos summary { padding: 16px 32px 16px 0; font-size: 14px; }
+.news-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding-top: 8px; }
+.news-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.news-gallery figcaption { margin-top: 8px; color: var(--muted); font-size: 12px; }
+@media (max-width: 760px) {
+ .news { padding-top: 24px; padding-bottom: 28px; }
+ .news-event { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-top: 20px; }
+ .news-copy h3 { font-size: 29px; }
+ .news-date br { display: none; }
+ .news-date strong { display: block; font-size: 30px; }
+ .news-gallery { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+ .news-gallery img { aspect-ratio: auto; object-fit: contain; }
+}
