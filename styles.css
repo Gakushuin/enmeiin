@@ -641,3 +641,6 @@ footer address { color: var(--muted); font: normal 14px/2 var(--sans); }
  .event-article .button { padding-inline: 18px; }
  body:has(.event-article) { padding-bottom: 0; }
 }
+
+/* Space the news section after the main temple photograph. */
+.gate-photo + .news { margin-top: clamp(24px, 4vw, 48px); }
